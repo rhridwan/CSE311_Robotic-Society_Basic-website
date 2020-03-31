@@ -10,7 +10,15 @@
 
 </head>
 
-<body>
+<body onload="myFunction()">
+    <!-- Preloader.................................................................... -->
+
+    <div id="loading">
+
+    </div>
+
+    <!-- Preloader end................................................................ -->
+
     <!-- fobi chatbot start -->
     <script src="https://fobi.io/embed.js"></script>
     <div id="embed-fobi" data-fobi-id="kqPbgug" data-bot-title="Me Binary :D" data-hd-bg="#74777a" data-hd-ti-clr="#FFF" data-ct-pm="#74777a" data-ct-sc="#FFF" data-ct-bot-img="https://fobi.io/head.png" data-btn-offset="Right: 30px" data-cb-offset="Right: 80px" data-btn-img="https://fobi.io/icon.png" data-btn-bg="#00070d" data-cb-height="400px" data-cb-width="330px"></div>
@@ -246,6 +254,22 @@
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="./HP.js"></script>
+
+    <footer style="width: 100%; height: 100px; background-color: #606263;">
+        <h2 style="color: black; font-family: 'Dosis',sans-serif; line-height: 100px;text-align: center;">
+           © 2020 Robotics Society, Inc.
+       </h2>
+
+    </footer>
+
+    <script>
+
+        var preloader = document.getElementById("loading");
+
+        function myFunction(){
+            preloader.style.display = 'none';
+        };
+    </script>
 
 </body>
 

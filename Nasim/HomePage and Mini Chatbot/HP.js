@@ -93,3 +93,4 @@ class ScrollEvents {
 const scrollEvents = new ScrollEvents();
 
 scrollEvents.run();
+
