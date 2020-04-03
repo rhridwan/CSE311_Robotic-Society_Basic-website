@@ -237,3 +237,90 @@ a {
 .navigation li a.active {
   background-color: #b10000;
 }
+/*scrolling effect start.............................................................................*/
+
+/*.banner-area{
+  background-color: black;
+  -webkit-background-size:cover;
+  background-size: cover;
+
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}*/
+.banner-table{
+  display: table;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  z-index: auto;
+}
+.banner-table-cell{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.banner-area h2{
+  color: #fff;
+  font-size: 60px;
+  text-transform: uppercase;
+
+}
+.mouse-icon .wheel{
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  width: 4px;
+  height: 10px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation-name: drop;
+  -moz-animation-name: drop;
+  -o-animation-name: drop;
+  animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.mouse-icon{
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  border: 2px solid #fff;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  border-radius: 16px;
+  height: 50px;
+  width: 30px;
+  margin-left: -17px;
+  display: block;
+  z-index: 10
+}
+
+@keyframes drop{
+  0%{top: 5px;opacity: 0}
+  30%{top: 10px;opacity: 1}
+  100%{top: 25px;opacity: 0}
+}
+
+/*scrolling effect end...............................................................................*/
