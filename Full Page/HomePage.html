@@ -11,7 +11,7 @@
 
 </head>
 
-<body onload="myFunction()">
+<body onload="myFunction() ; typeWriter1(); typeWriter2()" >
     <!-- Preloader.................................................................... -->
 
     <div id="loading">
@@ -44,10 +44,10 @@
                         <div class="promo-text">
                             <span class="dash"></span>
                             <!-- span provides a way to add a hook to a part of a text or a part of a document. -->
-                            <span class="promo-flag">WHAT DO YOU THINK WHAT OUR MAIN PURPOSE IS?</span>
+                            <span class="promo-flag"><p id="demo1"></p></span>
                             <a href="#" class="copy">
                                 <div class="headline">Robotics Society</div>
-                                <p class="body long">Join us and see the world in a whole new way.</p>
+                                <p class="body long"><p id="demo2"></p></p>
                             </a>
                             <div class="buttons">
                                 <a class="button sho-play-link" href="Log In.html"></span>Log In</a>
@@ -58,22 +58,7 @@
                     </div>
                 </div>
 
-                <!--                 <div class="promotion" id="section2" style="background-image: url(9.jpg))">
-                    <div class="shade"></div>
-                    <div class="promo-detail cycle-overlay">
-                        <div class="promo-text">
-                            <span class="dash"></span>
-                            <span class="promo-flag">Season 9 Premieres September 9</span>
-                            <a href="#" class="copy">
-                                <div class="headline">Shameless</div>
-                                <p class="body long">A scrappy, fiercely loyal Chicago family makes no apologies. Watch Seasons 1-8 now.</p>
-                            </a>
-                            <div class="buttons">
-                                <a class="button info-button" href="#">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+
 
                 <div class="promotion" id="section2" style="background-image: url(3.jpg)">
                     <div class="shade"></div>
@@ -161,22 +146,6 @@
                     </div>
                 </div>
 
-                <!--                 <div class="promotion" id="section8" style="background-image: url(8.jpg)">
-                    <div class="shade"></div>
-                    <div class="promo-detail cycle-overlay">
-                        <div class="promo-text">
-                            <span class="dash"></span>
-                            <a href="#" class="copy">
-                                <div class="headline medium">The Girl On The Train</div>
-                                <p class="body long">A woman (Emily Blunt), devastated by her divorce, becomes entangled in a mystery after witnessing a shocking event.</p>
-                            </a>
-                            <div class="buttons">
-                                <a class="button sho-play-link" href="#"></span>Play Now</a>
-                                <a class="button info-button" href="#">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
                 <div class="promotion" id="section7" style="background-image: url(9.jpg)">
                     <div class="shade"></div>
@@ -260,7 +229,7 @@
 
         </ul>
     </div>
-    <!-- partial -->
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="./HP.js"></script>
 
@@ -278,6 +247,31 @@
             preloader.style.display = 'none';
         };
     </script>
+<!-- typewriter effect start.......................................................................... -->
+<script>
+var i = 0;
+var j =0;
+var txt1 = 'WHAT DO YOU THINK WHAT OUR MAIN PURPOSE IS?';
+var txt2 = 'Join us and see the world in a whole new way.'
+var speed = 70;
+
+function typeWriter1() {
+  if (i < txt1.length) {
+    document.getElementById("demo1").innerHTML += txt1.charAt(i);
+    i++;
+    setTimeout(typeWriter1, speed);
+  }
+}
+
+function typeWriter2() {
+  if (j < txt2.length) {
+    document.getElementById("demo2").innerHTML += txt2.charAt(j);
+    j++;
+    setTimeout(typeWriter2, speed);
+  }
+}
+</script>
+<!-- typewriter effect end.......................................................................... -->
 
 </body>
 
