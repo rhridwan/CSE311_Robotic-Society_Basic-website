@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Signing Up</title>
+	<link rel="stylesheet" href="./Signup.css">
+
+</head>
+
+<body>
+	<!-- partial:Signup.partial.html -->
+	<div class="wrapper">
+		<div class="container">
+			<h1>Welcome</h1>
+
+			<form class="form" action="" method="post" name="">
+				<input type="text" name="username" placeholder="Username">
+				<input type="text" name="Email" placeholder="Email">
+				<input type="password" name="Password"placeholder="Password">
+				<!-- <input type="password" placeholder="Re-Enter Password"> -->
+				<input type="text" name="Isntution" placeholder="Institution">
+				<input type="text" name="Gender" placeholder="Gender">
+				<button type="submit" name="Submit" id="login-button">Sign Up Now!</button>
+			</form>
+		</div>
+
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="./SignUp.js"></script>
+<?php
+//including the database connection file
+include_once("config.php");
+
+if(isset($_POST['Submit'])) {	
+	
+	$name = $_POST['name'];
+	$id = $_POST['id'];
+	$address = $_POST['address'];
+
+	
+				
+	$sql = "INSERT  INTO student(Name, ID, Address) 
+				VALUES('$name', '$id', '$address')";
+	
+	$result = mysqli_query($conn, $sql);
+
+	//header("Location: index.php");
+	echo "<h1 align = 'center'>Information Added</h1>";
+		
+	}
+
+
+?>
+</body>
+
+</html>
