@@ -63,6 +63,8 @@ if(isset($_POST['Submit'])) {
 
 	//header("Location: index.php");
 	echo "<h1 align = 'center'>Information Added</h1>";
+
+	header('location:http://localhost/Robotic Society/HomePage.html');
 		
 	}
 
