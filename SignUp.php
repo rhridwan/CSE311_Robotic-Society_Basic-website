@@ -15,13 +15,14 @@
 			<h1>Welcome</h1>
 
 			<form class="form" action="" method="post" name="">
-				<input type="text" name="name" placeholder="name">
-				<input type="text" name="phonenumber" placeholder="Phone Number">
+				<input type="text" name="name" placeholder="Name">
 				<input type="text" name="Email" placeholder="Email">
-				<input type="password" name="Password"placeholder="Password">
-				<!-- <input type="password" placeholder="Re-Enter Password"> -->
+				<input type="text" name="phonenumber" placeholder="Phone Number">
 				<input type="text" name="institution" placeholder="Institution">
 				<input type="text" name="gender" placeholder="Gender">
+				<input type="password" name="Password"placeholder="Password">
+				<!-- <input type="password" placeholder="Re-Enter Password"> -->
+				
 		
 				<button type="submit" name="Submit" value="Submit">SIGN UP</button>
 			</form>
@@ -64,7 +65,7 @@ if(isset($_POST['Submit'])) {
 	//header("Location: index.php");
 	echo "<h1 align = 'center'>Information Added</h1>";
 
-	header('location:http://localhost/Robotic Society/HomePage.html');
+	header('location:http://localhost/Robotic-Society/HomePage.html');
 		
 	}
 
