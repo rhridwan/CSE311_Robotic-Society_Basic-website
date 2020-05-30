@@ -1,4 +1,4 @@
-# Robotic-Society
+# Robotics-Society
 A simple Website for maintaining a small dedicated Robotics Society. It was created as a project during CSE311(Database Management System).
 
 You can will find the website in this link: [Robotics Society](https://roboticssociety01.000webhostapp.com/)
